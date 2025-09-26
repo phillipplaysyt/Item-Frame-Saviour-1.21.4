@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "itemframesaviour",
+	"version": "${version}",
+	"name": "Item Frame Saviour",
+	"description": "Bypasses the item drop gamerule and saves your items from item frames in creative mode when you punch them out.",
+	"authors": [
+		"ItsPhillip"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/WMI6y0yh",
+		"sources": "https://modrinth.com/project/WMI6y0yh"
+	},
+	"license": "MIT",
+	"icon": "assets/itemframesaviour/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.itsphillip.itemframesaviour.ItemFrameSaviour"
+		],
+		"client": [
+			"net.itsphillip.itemframesaviour.ItemFrameSaviourClient"
+		],
+		"fabric-datagen": [
+			"net.itsphillip.itemframesaviour.ItemFrameSaviourDataGenerator"
+		],
+        "modmenu": [
+            "net.itsphillip.itemframesaviour.config.ModMenuIntegration"
+        ]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
